@@ -1,0 +1,98 @@
+:root {
+	--text: #cfd6fe;
+	--background: #01071f;
+	--primary: #7a95fb;
+	--secondary: #990467;
+	--accent: #fa3155;
+	
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--background);
+}
+
+header {
+	height: 90vh;
+}
+
+section {
+	height: 100vh;
+}
+
+header {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* background-color: red; */
+}
+
+article {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	/* background-color: red; */
+}
+
+nav {
+	margin: 0 auto;
+	display: flex;
+	background-color: var(--accent);
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	padding: 1rem 0;
+	transition: .2s;
+}
+
+.navbar ul {
+	list-style-type: none;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	gap: 2rem;
+}
+
+.navbar ul li a {
+	font-size: 1rem;
+	color: var(--text);
+	text-decoration: none;
+}
+
+#navbar.active {
+	top: -80px;
+	transition: .5s;
+}
+
+#home, #curriculo, #portfolio, #contato {
+	color: white;
+	background-color: var(--background);
+}
+
+#sobre-mim, #habilidades, #portfolio {
+	background-color: var(--accent);
+}
+
+main {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+}
+
+#sobre-mim {
+	padding: 10vh 0;
+}
