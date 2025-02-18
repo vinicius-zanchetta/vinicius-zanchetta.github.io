@@ -451,6 +451,8 @@ li i {
 	width: 96px;
 	height: 96px;
 	border-radius: 100%;
+	border: 2px solid var(--accent);
+	padding: 4px;
 }
 
 
